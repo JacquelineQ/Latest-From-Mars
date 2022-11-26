@@ -1,10 +1,12 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar.js";
+
 
 function App() {
   return (
     <>
     <NavBar />;
+
     <h1>Hello World!</h1>;
     </>
   )
