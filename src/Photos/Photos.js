@@ -1,9 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-// import Perseverance from "./Perseverance";
-// import Curiosity from "./Curiosity";
-// import Spirit from "./Spirit";
-// import Opportunity from "./Opportunity";
+
 
 function Photos() {
     return (
