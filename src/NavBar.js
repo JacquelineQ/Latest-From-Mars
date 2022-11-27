@@ -40,10 +40,24 @@ function NavBar() {
                 <Route path="/about" element={<About />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/photos/photos" element={<Photos />}>
-                    <Route path="perseverance" element={<Perseverance />} />
-                    <Route path="curiosity" element={<Curiosity />} />
-                    <Route path ="opportunity" element={<Opportunity />} />
-                    <Route path="spirit" element={<Spirit />} />
+                    <Route path="perseverance" element={<Perseverance />}>
+                        <Route path="perseverancelatest" element={<PerseveranceLatest />}/>
+                        <Route path="perseveranceearth" element={<PerseveranceEarth />}/>
+                        <Route path="perseverancesol" element={<PerseveranceSol />}/>
+                    </Route>
+                    <Route path="curiosity" element={<Curiosity />}>
+                        <Route path="curiositylatest" element={<CuriosityLatest />} />
+                        <Route path="curiosityearth" element={<CuriosityEarth />} />
+                        <Route path="curiositysol" element={<CuriositySol />} />
+                    </Route>
+                    <Route path ="opportunity" element={<Opportunity />}>
+                        <Route path ="opportunityearth" element={<OpportunityEarth />} />
+                        <Route path ="opportunitysol" element={<OpportunitySol />} />
+                    </Route>
+                    <Route path="spirit" element={<Spirit />}>
+                        <Route path="spiritearth" element={<SpiritEarth />} />
+                        <Route path="spiritsol" element={<SpiritSol />} />
+                    </Route>
                 </Route>
             </Routes>
         </>
