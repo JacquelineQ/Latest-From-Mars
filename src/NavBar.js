@@ -9,9 +9,19 @@ import About from "./About.js";
 import Blog from "./Blog.js";
 import Photos from "./Photos/Photos.js";
 import Perseverance from "./Photos/Perseverance.js";
+import PerseveranceLatest from "./Photos/PerseveranceLatest.js";
+import PerseveranceEarth from "./Photos/PerseveranceEarth.js";
+import PerseveranceSol from "./Photos/PerseveranceSol.js";
 import Curiosity from "./Photos/Curiosity.js";
+import CuriosityLatest from "./Photos/CuriosityLatest.js";
+import CuriosityEarth from "./Photos/CuriosityEarth.js";
+import CuriositySol from "./Photos/CuriositySol.js";
 import Opportunity from "./Photos/Opportunity.js";
+import OpportunityEarth from "./Photos/OpportunityEarth.js";
+import OpportunitySol from "./Photos/OpportunitySol.js";
 import Spirit from "./Photos/Spirit.js";
+import SpiritEarth from "./Photos/SpiritEarth.js";
+import SpiritSol from "./Photos/SpiritSol.js";
 
 function NavBar() {
     return (
