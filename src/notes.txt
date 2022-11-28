@@ -1,6 +1,6 @@
 Query by Earth Date: https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=2015-6-3
 
-
+Query by Martian Sol: https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000
 Perseverance
 
 //NO MAX EARTH OR SOL DATE
