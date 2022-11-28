@@ -5,8 +5,8 @@ import DataTable from "react-data-table-component";
 
 function PerseveranceLatest() {
     const [photos, setPhotos] = useState([]);
-    const [pending, setPending] = React.useState(true);
-	  const [rows, setRows] = React.useState([]);
+    // const [pending, setPending] = React.useState(true);
+	  // const setRows = React.useState([]);
 
     const columns = [
         {
@@ -34,11 +34,10 @@ function PerseveranceLatest() {
         .get("https://mars-photos.herokuapp.com//api/v1/rovers/perseverance/latest_photos?")
         .then((response) => {
             const photos = response.data.latest_photos;
-            // setPhotos(photos);
+            setPhotos(photos);
             
-              setPhotos(photos)
-              setRows(response)
-              setPending(false);
+              // setRows(response)
+              // setPending(false);
         });
     }, []);
 
@@ -50,7 +49,7 @@ function PerseveranceLatest() {
      
         <>
         <h1>Latest Photos from the Perseverence Rover</h1>
-        <DataTable className="dataTable" columns={columns} data={photos} progressPending={pending} pagination />
+        <DataTable className="dataTable" columns={columns} data={photos} pagination />
         </>
     );
 }

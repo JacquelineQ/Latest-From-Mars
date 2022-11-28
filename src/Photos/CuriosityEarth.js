@@ -12,8 +12,8 @@ import DataTable from "react-data-table-component";
 function CuriosityEarth() {
     const [date, setDate] = useState('');
     const [photos, setPhotos] = useState([]);
-    const [pending, setPending] = React.useState(true);
-    const [rows, setRows] = React.useState([]);
+    // const setPending = React.useState(true);
+    // const setRows = React.useState([]);
 	
 
     const columns = [
@@ -39,8 +39,8 @@ function CuriosityEarth() {
             const photos = response.data.photos;
             setPhotos(photos);
         
-              setRows(response)
-              setPending(false);
+              // setRows(response)
+              // setPending(false);
           
         });
 

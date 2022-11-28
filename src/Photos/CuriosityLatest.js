@@ -5,8 +5,8 @@ import DataTable from "react-data-table-component";
 
 function CuriosityLatest() {
     const [photos, setPhotos] = useState([]);
-    const [pending, setPending] = React.useState(true);
-    const [rows, setRows] = React.useState([]);
+    // const setPending = React.useState(true);
+    // const setRows = React.useState([]);
 	
     
 
@@ -39,8 +39,8 @@ function CuriosityLatest() {
             const photos = response.data.latest_photos;
             setPhotos(photos);
         
-              setRows(response)
-              setPending(false);
+              // setRows(response)
+              // setPending(false);
           
         });
 
@@ -54,7 +54,7 @@ function CuriosityLatest() {
      
         <div>
         <h1>Latest Photos from the Curiosity Rover</h1>
-        <DataTable columns={columns} data={photos} progressPending={pending} pagination />
+        <DataTable columns={columns} data={photos} pagination />
         </div>
     );
 }

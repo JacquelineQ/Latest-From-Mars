@@ -6,8 +6,8 @@ function SpiritEarth(){
 
     const [date, setDate] = useState('');
     const [photos, setPhotos] = useState([]);
-    const [pending, setPending] = React.useState(true);
-    const [rows, setRows] = React.useState([]);
+    // const setPending = React.useState(true);
+    // const setRows = React.useState([]);
 	
 
     const columns = [
@@ -34,8 +34,8 @@ function SpiritEarth(){
             const photos = response.data.photos;
             setPhotos(photos);
         
-              setRows(response)
-              setPending(false);
+              // setRows(response)
+              // setPending(false);
           
         });
 
@@ -58,7 +58,7 @@ function SpiritEarth(){
         </form>
         <div>
         <h1>Photos from {date}</h1>
-        <DataTable columns={columns} data={photos} progressPending={pending} pagination />
+        <DataTable columns={columns} data={photos} pagination />
         </div>
         </>
     )

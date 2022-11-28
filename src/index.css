@@ -3,6 +3,14 @@
   color: white;
 }
 
+/* test to fix pending page color issue  */
+
+.bzRnkJ {
+  background-color: black !important; 
+  color: white !important;
+  /* width: 100%; */
+}
+
 /* CRA supplied  */
 body {
   margin: 0;
@@ -26,5 +34,6 @@ nav {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  /* set padding to % for now, may change  */
   padding: 4%;
 }
