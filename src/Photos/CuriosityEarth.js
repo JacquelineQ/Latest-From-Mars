@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import DataTable from "react-data-table-component";
 
 //going use useState with date and setDate equal to an empty string '', input for where
 //value is dynamic ie value={date}, and with an onChange function that invokes
@@ -7,13 +9,49 @@ import React, { useState } from "react";
 
 //Pretty sure I need a form component and a fetchPhotos component which takes the
 // date value submitted in the form as a prop
-function CuriosityEarth({FetchPhotosByDate}) {
+function CuriosityEarth() {
     const [date, setDate] = useState('');
-    const fetchPhotos = <FetchPhotosByDate />
+    const [photos, setPhotos] = useState([]);
+    const [pending, setPending] = React.useState(true);
+    const [rows, setRows] = React.useState([]);
+	
+
+    const columns = [
+        {
+          name: "Matian Sol",
+          selector: (row) => row.sol,
+        },
+        {
+          name: "Camera",
+          selector: (row) => row.camera.name,
+          sortable: true
+        },
+        {
+          name: "Image",
+          cell: (props) => <a href={props.img_src} target="_blank" rel="noreferrer"><img src={props.img_src} width={60} alt="Mars"  /></a>,
+         
+        }
+      ];
+    const fetchPhotos = useEffect(() => {
+        axios
+        .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=${date}`)
+        .then((response) => {
+            const photos = response.data.photos;
+            setPhotos(photos);
+        
+              setRows(response)
+              setPending(false);
+          
+        });
+
+       
+
+    }, [date]);
+
     return (
         <>
         <form onSubmit={fetchPhotos}>
-            <label>Choose and Earth Date:</label>
+            <label>Choose Earth Date:</label>
             <input 
             type="date"
             required
@@ -22,8 +60,11 @@ function CuriosityEarth({FetchPhotosByDate}) {
             onChange={(e) => setDate(e.target.value)}
             />
             <button type="submit">Search</button>
-            <p>{date}</p>
         </form>
+        <div>
+        <h1>Photos from {date}</h1>
+        <DataTable columns={columns} data={photos} progressPending={pending} pagination />
+        </div>
         </>
     )
 }
