@@ -49,7 +49,6 @@ function PerseveranceSol() {
             type="number"
             required
             value={sol}
-            max="3663"
             onChange={(e) => setSol(e.target.value)}
             />
         </form>
