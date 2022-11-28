@@ -34,7 +34,7 @@ function CuriosityEarth() {
       ];
     const fetchPhotos = useEffect(() => {
         axios
-        .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=${date}`)
+        .get(`https://mars-photos.herokuapp.com//api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=${date}`)
         .then((response) => {
             const photos = response.data.photos;
             setPhotos(photos);
@@ -59,11 +59,11 @@ function CuriosityEarth() {
             min="2012-08-06"
             onChange={(e) => setDate(e.target.value)}
             />
-            <button type="submit">Search</button>
+            <button type="submit">Submit</button>
         </form>
         <div>
         <h1>Photos from {date}</h1>
-        <DataTable columns={columns} data={photos} progressPending={pending} pagination />
+        <DataTable columns={columns} data={photos} pagination />
         </div>
         </>
     )

@@ -27,7 +27,7 @@ function SpiritSol() {
       ];
     const fetchPhotos = useEffect(() => {
         axios
-        .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?api_key=DEMO_KEY&sol=${sol}`)
+        .get(`https://mars-photos.herokuapp.com//api/v1/rovers/spirit/photos?api_key=DEMO_KEY&sol=${sol}`)
         .then((response) => {
             const photos = response.data.photos;
             setPhotos(photos);
@@ -52,10 +52,11 @@ function SpiritSol() {
             max="2208"
             onChange={(e) => setSol(e.target.value)}
             />
+            <button type="submit">Submit</button>
         </form>
         <div>
         <h1>Photos from Martian Sol: {sol}</h1>
-        <DataTable columns={columns} data={photos} progressPending={pending} pagination />
+        <DataTable columns={columns} data={photos} pagination />
         </div>
         </>
     )

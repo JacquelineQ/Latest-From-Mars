@@ -28,7 +28,7 @@ function OpportunityEarth() {
 
     const fetchPhotos = useEffect(() => {
         axios
-        .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?api_key=DEMO_KEY&earth_date=${date}`)
+        .get(`https://mars-photos.herokuapp.com//api/v1/rovers/opportunity/photos?api_key=DEMO_KEY&earth_date=${date}`)
         .then((response) => {
             const photos = response.data.photos;
             setPhotos(photos);
