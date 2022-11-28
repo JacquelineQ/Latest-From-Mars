@@ -27,10 +27,10 @@ function NavBar() {
     return (
         <>
         <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/photos/photos">Photos</Link>
+            <Link className="navLink" to="/">Home</Link>
+            <Link className="navLink" to="/about">About</Link>
+            <Link className="navLink" to="/blog">Blog</Link>
+            <Link className="navLink" to="/photos/photos">Photos</Link>
         </nav>
   
   
