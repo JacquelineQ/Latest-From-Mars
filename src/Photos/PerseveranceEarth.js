@@ -53,7 +53,6 @@ function PerseveranceEarth() {
             min="2021-02-18"
             onChange={(e) => setDate(e.target.value)}
             />
-            <button type="submit">Search</button>
         </form>
         <div>
         <h1>Photos from {date}</h1>

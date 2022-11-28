@@ -59,7 +59,6 @@ function CuriosityEarth() {
             min="2012-08-06"
             onChange={(e) => setDate(e.target.value)}
             />
-            <button type="submit">Submit</button>
         </form>
         <div>
         <h1>Photos from {date}</h1>

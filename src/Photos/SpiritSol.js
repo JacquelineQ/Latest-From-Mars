@@ -52,7 +52,6 @@ function SpiritSol() {
             max="2208"
             onChange={(e) => setSol(e.target.value)}
             />
-            <button type="submit">Submit</button>
         </form>
         <div>
         <h1>Photos from Martian Sol: {sol}</h1>

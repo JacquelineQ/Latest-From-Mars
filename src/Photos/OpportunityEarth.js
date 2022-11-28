@@ -54,7 +54,6 @@ function OpportunityEarth() {
             max="2018-06-11"
             onChange={(e) => setDate(e.target.value)}
             />
-            <button type="submit">Search</button>
         </form>
         <div>
         <h1>Photos from {date}</h1>

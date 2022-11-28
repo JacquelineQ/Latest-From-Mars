@@ -55,7 +55,6 @@ function SpiritEarth(){
             max="2010-03-21"
             onChange={(e) => setDate(e.target.value)}
             />
-            <button type="submit">Search</button>
         </form>
         <div>
         <h1>Photos from {date}</h1>
