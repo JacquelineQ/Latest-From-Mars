@@ -2,6 +2,7 @@
   background-color: black;
   color: white;
   text-decoration: none;
+  /* font-size: 20px;; */
 }
 
 /* test to fix pending view and pagination footer color issue  */
@@ -68,4 +69,8 @@ form {
 input {
   height: 2em;
   margin: 1%;
+}
+
+.dataTable {
+  font-size: 20px;
 }

@@ -54,6 +54,7 @@ function CuriosityLatest() {
      
         <div>
         <h1>Latest Photos from the Curiosity Rover</h1>
+        <p>Click on an image to expand!</p>
         <DataTable columns={columns} data={photos} pagination />
         </div>
     );

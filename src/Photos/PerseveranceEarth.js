@@ -74,7 +74,8 @@ function PerseveranceEarth() {
       
 
       <div className="photoDisplay">
-      <h2>Photos from {date}</h2>
+      <h2>Photos from Earth Date: {date}</h2>
+      <p>Click on an image to expand!</p>
         <DataTable columns={columns} data={photos} pagination />
       </div>
     </>

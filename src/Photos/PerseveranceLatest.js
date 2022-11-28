@@ -49,6 +49,7 @@ function PerseveranceLatest() {
      
         <>
         <h1>Latest Photos from the Perseverence Rover</h1>
+        <p>Click on an image to expand!</p>
         <DataTable className="dataTable" columns={columns} data={photos} pagination />
         </>
     );

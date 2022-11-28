@@ -54,6 +54,7 @@ function PerseveranceSol() {
         </form>
         <div>
         <h1>Photos from Martian Sol: {sol}</h1>
+        <p>Click on an image to expand!</p>
         <DataTable columns={columns} data={photos} pagination />
         </div>
         </>
