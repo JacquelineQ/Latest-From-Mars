@@ -5,9 +5,9 @@ import { Link, Outlet } from "react-router-dom";
 function Spirit() {
     return (
         <>
-        <div className="spiritNav">
-            <Link to="spiritEarth">Spirit Earth</Link>
-            <Link to="spiritSol">Spirit Sol</Link>
+        <div className="roverNav">
+            <Link to="spiritEarth">Spirit by Earth Date</Link>
+            <Link to="spiritSol">Spirit by Martian Sol</Link>
         </div>
 
         <Outlet />

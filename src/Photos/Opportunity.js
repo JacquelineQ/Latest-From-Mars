@@ -4,9 +4,9 @@ import { Link, Outlet } from "react-router-dom";
 function Opportunity() {
     return (
         <>
-        <div className="opportunityNav">
-            <Link to="opportunityEarth">Opportunity Earth</Link>
-            <Link to="opportunitySol">Opportunity Sol</Link>
+        <div className="roverNav">
+            <Link to="opportunityEarth">Opportunity by Earth Date</Link>
+            <Link to="opportunitySol">Opportunity Martian Sol</Link>
         </div>
 
         <Outlet />

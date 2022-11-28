@@ -1,6 +1,7 @@
 * {
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 /* test to fix pending view and pagination footer color issue  */
@@ -35,5 +36,22 @@ nav {
   display: flex;
   justify-content: space-between;
   /* set padding to % for now, may change  */
-  padding: 4%;
+  padding: 2%;
+  border: solid white;
+  font-size: large;
 }
+
+.photosNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  border: solid white;
+}
+
+.roverNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  border: solid white;
+}
+

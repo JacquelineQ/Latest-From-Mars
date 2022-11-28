@@ -4,10 +4,10 @@ import { Link, Outlet } from "react-router-dom";
 function Curiosity() {
     return (
         <>
-        <div className="curiosityNav">
+        <div className="roverNav">
             <Link to="curiosityLatest">Curiosity Latest</Link>
-            <Link to="curiosityEarth">Curiosity Earth</Link>
-            <Link to="curiositySol">Curiosity Sol</Link>
+            <Link to="curiosityEarth">Curiosity by Earth Date</Link>
+            <Link to="curiositySol">Curiosity by Martian Sol</Link>
         </div>
 
         <Outlet />
