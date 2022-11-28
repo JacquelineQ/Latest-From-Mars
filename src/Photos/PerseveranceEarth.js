@@ -43,22 +43,41 @@ function PerseveranceEarth() {
     }, [date]);
 
     return (
-        <>
-        <form onSubmit={fetchPhotos}>
-            <label>Choose Earth Date:</label>
-            <input 
-            type="date"
-            required
-            value={date}
-            min="2021-02-18"
-            onChange={(e) => setDate(e.target.value)}
-            />
-        </form>
-        <div>
-        <h1>Photos from {date}</h1>
+    //     <div className="earthDateForm">
+    //     <form onSubmit={fetchPhotos}>
+    //         <label><h1>Choose Earth Date:</h1></label>
+    //         <input 
+    //         type="date"
+    //         required
+    //         value={date}
+    //         min="2021-02-18"
+    //         onChange={(e) => setDate(e.target.value)}
+    //         />
+    //     </form>
+    //     <div>
+    //     <h3>Photos from {date}</h3>
+    //     <DataTable columns={columns} data={photos} pagination />
+    //     </div>
+    //     </div>
+    <>
+    
+      <form onSubmit={fetchPhotos}>
+             <label><h1>Choose Earth Date:</h1></label>
+             <input 
+             type="date"
+             required
+             value={date}
+             min="2021-02-18"
+             onChange={(e) => setDate(e.target.value)}
+             />
+         </form>
+      
+
+      <div className="photoDisplay">
+      <h2>Photos from {date}</h2>
         <DataTable columns={columns} data={photos} pagination />
-        </div>
-        </>
+      </div>
+    </>
     )
 }
 

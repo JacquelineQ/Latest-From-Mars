@@ -55,3 +55,17 @@ nav {
   border: solid white;
 }
 
+/* Earth date search forms  */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
+  align-items: center;
+
+}
+
+input {
+  height: 2em;
+  margin: 1%;
+}
