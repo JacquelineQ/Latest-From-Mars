@@ -3,9 +3,9 @@
   color: white;
 }
 
-/* test to fix pending page color issue  */
+/* test to fix pending view and pagination footer color issue  */
 
-.bzRnkJ {
+.bzRnkJ, .gKbhqU {
   background-color: black !important; 
   color: white !important;
   /* width: 100%; */
