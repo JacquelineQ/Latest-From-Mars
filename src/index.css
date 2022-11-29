@@ -11,6 +11,12 @@ nav {
   color: white !important;
 }
 
+button {
+  color: white !important;
+  fill: white !important;
+  fill-opacity: 100 !important;
+} 
+
 div {
   background-color: black !important;
 }
