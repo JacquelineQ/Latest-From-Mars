@@ -26,7 +26,7 @@ function CuriosityLatest() {
         },
         {
           name: "Image",
-          cell: (props) => <a href={props.img_src} target="_blank" rel="noreferrer"><img src={props.img_src} width={60} alt="Mars"  /></a>,
+          cell: (props) => <a href={props.img_src} target="_blank" rel="noopener noreferrer"><img src={props.img_src} width={60} alt="Mars"  /></a>,
          
         }
       ];
