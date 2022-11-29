@@ -26,7 +26,7 @@ import SpiritSol from "./Photos/SpiritSol.js";
 function NavBar() {
     return (
         <>
-        <nav>
+        <nav class="mainNav">
             <Link className="navLink" to="/">Home</Link>
             <Link className="navLink" to="/about">About</Link>
             <Link className="navLink" to="/blog">Blog</Link>

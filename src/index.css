@@ -7,6 +7,7 @@
 
 /* test to fix pending view and pagination footer color issue  */
 nav {
+  box-sizing: border-box;
   background-color: black !important;
   color: white !important;
 }
@@ -41,7 +42,7 @@ code {
 
 /* Nav Bar  */
 
-nav {
+.mainNav {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
