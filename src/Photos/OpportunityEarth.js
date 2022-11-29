@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DataTable from "react-data-table-component";
+import Flatpickr from "react-flatpickr";
 
 function OpportunityEarth() {
+  const flatpickr = require("flatpickr");
     const [date, setDate] = useState('');
     const [photos, setPhotos] = useState([]);
     // const setPending = React.useState(true);
@@ -44,7 +46,7 @@ function OpportunityEarth() {
 
     return (
         <>
-        <form onSubmit={fetchPhotos}>
+        {/* <form onSubmit={fetchPhotos}>
             <label>Choose Earth Date:</label>
             <input 
             type="date"
@@ -54,7 +56,14 @@ function OpportunityEarth() {
             max="2018-06-11"
             onChange={(e) => setDate(e.target.value)}
             />
-        </form>
+        </form> */}
+        <Flatpickr
+        type="date"
+        required
+        value={date}
+        options={{ minDate: "2004-01-25", maxDate:"2018-06-11" }}
+        onChange={(e) => setDate(e.target.value)}
+        />
         <div>
         <h1>Photos from Earth Date: {date}</h1>
         <p>Click on an image to expand!</p>
