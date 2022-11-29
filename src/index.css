@@ -78,3 +78,16 @@ input {
 .dataTable {
   font-size: 20px;
 }
+
+/* Main pages  */
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainP {
+ font-size: 20px;
+ padding: 5%;
+ line-height: 150%;
+}
